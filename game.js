@@ -63,8 +63,10 @@ class CellGrid {
   drawCell(cell) {
     const cellX = cell.position.col * this.cellWidth;
     const cellY = cell.position.row * this.cellHeight;
+    // this.ctx.fillStyle = cell.alive ? "#ddd" : "#222"; //dark mode
     this.ctx.fillStyle = cell.alive ? "#222" : "#fff";
     this.ctx.fillRect(cellX, cellY, this.cellWidth, this.cellHeight);
+    // this.ctx.strokeStyle = "#555"; // dark mode
     this.ctx.strokeStyle = "#eee"; // set border color
     this.ctx.strokeRect(cellX, cellY, this.cellWidth, this.cellHeight); // add border
   }
