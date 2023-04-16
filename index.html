@@ -10,14 +10,22 @@
         canvas {
             border: 1px solid black;
         }
+
+        body {
+            text-align: center;
+        }
     </style>
     <script src="game.js" defer></script>
 </head>
 
 <body>
-    <canvas id="gameContainer" width="1400" height="700">
+    <canvas id="gameContainer" width="700" height="700">
         Your browser does not support the HTML canvas tag.</canvas>
-    <button id="button">start</button>
+    <button id="button" type="button">start</button>
+    <button id="reset" type="button">Reset</button>
+    <button id="clear" type="button">clear</button>
+    <div id="population">Population:<span></span></div>
+    <div id="generations">Generation:<span></span></div>
 </body>
 
 </html>
